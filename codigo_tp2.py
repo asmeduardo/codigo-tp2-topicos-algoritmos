@@ -59,7 +59,7 @@ def calcular_custo_e_validar(solucao):
 def imprimir_solucao(titulo, solucao, custo):
     nomes = [f'C{chr(65+i)}' if t == 'P' else f'Cli{i-4}' for i, t in enumerate(tipos)]
     print(f"\n--- {titulo} ---")
-    print(f"Solução (vetor): {solucao}")  # ADICIONADO: mostra o vetor de inteiros
+    print(f"Solução (vetor): {solucao}")
     print(f"Custo Total: {custo:.2f} km")
     print(f"Viável: {'Sim' if custo != float('inf') else 'Não'}")
     print(f"Rota: {' → '.join(nomes[i] for i in solucao)}")
