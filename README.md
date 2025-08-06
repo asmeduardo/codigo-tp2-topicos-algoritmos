@@ -1,4 +1,4 @@
-# BWTSP Solver: GRASP + Tabu Search
+# BWTSP: GRASP + Tabu Search
 
 Este projeto implementa uma abordagem híbrida para resolver o **Problema do Caixeiro Viajante Branco e Preto (PCVPB)**, uma variação NP-difícil do TSP clássico, com restrições de cardinalidade e limite de distância. Os vértices são classificados como centros de distribuição (P) e clientes (B), e o objetivo é construir rotas viáveis de menor custo.
 
