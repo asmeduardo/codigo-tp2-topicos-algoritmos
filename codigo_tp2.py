@@ -1,13 +1,6 @@
 import random
 import collections
 
-pontos = [
-    (0, 0), (300, 200), (100, 300), (400, 100), (200, 400),
-    (50, 50), (80, 30), (120, 60), (150, 100), (200, 150),
-    (250, 180), (350, 120), (380, 180), (180, 250), (220, 280),
-    (60, 280), (140, 320)
-]
-
 tipos = ['P', 'P', 'P', 'P', 'P', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']
 
 distancias = [
@@ -66,7 +59,7 @@ def imprimir_solucao(titulo, solucao, custo):
 
 def construcao_grasp(alpha):
     solucao = [0]
-    pontos_a_visitar = list(range(1, len(pontos)))
+    pontos_a_visitar = list(range(1, len(distancias)))
 
     while pontos_a_visitar:
         ultimo_ponto = solucao[-1]
